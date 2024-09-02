@@ -378,6 +378,12 @@ understanding possible vulnerabilities and attack vectors. Use this tab to gener
                 key="authentication",
             )
 
+        # Create input fields for Number of users
+            Number of users = st.multiselect(
+                "Specify the number of end users for this application",
+                ["1-100", "101-500", "501-1000", "1001 to 10000", "10000-50000, "50000 and above"],
+                key="Number of users",
+            )
 
 
     # ------------------ Threat Model Generation ------------------ #
